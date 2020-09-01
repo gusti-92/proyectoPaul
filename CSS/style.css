@@ -5,6 +5,19 @@ h1{
 
 }
 
+
 body{
-    background-image: url(https://www.upsocl.com/wp-content/uploads/2015/02/portada12.jpg);
+    background: url(https://www.upsocl.com/wp-content/uploads/2015/02/portada12.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.fondoTexto{ background-color:rgba(225, 255, 255, .8)
+             } 
+
+    
+img{
+    font-size: 20px;
 }
