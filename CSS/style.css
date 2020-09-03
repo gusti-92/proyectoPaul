@@ -7,7 +7,7 @@ h1{
 
 
 body{
-    background: url(https://www.upsocl.com/wp-content/uploads/2015/02/portada12.jpg) no-repeat center center fixed;
+    background: url(https://www.xtrafondos.com/descargar.php?id=3424&resolucion=1920x1080) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -22,5 +22,10 @@ img{
     display:block;
     margin:auto;
     width: 400px; height: 500px;
+
 }
+
+.subtitulo{
+    text-align: center;
+};
 
