@@ -52,9 +52,36 @@ h3{
 
 footer{
     background-color: white;
+    margin-top: 60px;
 }
 
 #experiencia{
     font-size: 40px;
     text-decoration-line: underline;
+}
+
+#expLab{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#datPer{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#datosPersonales{
+    text-align: center;
+}
+
+#formacionA{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#fAcademica{
+    text-align: center;
 }

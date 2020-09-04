@@ -1,104 +1,49 @@
-var botonn = $("#boton");
+// datosPersonales //
 
-botonn.click(cambioColor);
+var datos = $("#datosPersonales");
 
-function cambioColor() {
-    botonn.css("background", colorRandom)
+listaDatos = [ 
 
-};
+    { dato1: 'Fecha de nacimiento:',
+      dato2: ' 27/05/1992.'},
 
-function colorRandom() {
-    var r = Math.floor(Math.random() * 255);
-    var g = Math.floor(Math.random() * 255);
-    var b = Math.floor(Math.random() * 255);
-    return "rgb(" + r + ", " + g + ", " + b + ")";
+    {dato1:'Edad:',
+     dato2:' 28 años.'},
 
-};
+     {dato1:'D. N. I:',
+     dato2:' 36.843.569.'},
 
+     {dato1:'C. U. I. L:',
+     dato2:' 20-36843569-5.'},
 
-var titulo = $("h1")
+     {dato1:'Estado civil:',
+     dato2:' Soltero.'},
 
-$(titulo).mouseover(function () {
-    $(titulo).css("background", "rgba(225, 255, 255, .6)");
-    $(titulo).css("color", "black");
-});
+     {dato1:'Dirección:',
+     dato2:' Labarden 6655, Del Viso, Pilar.'},
 
-$(titulo).mouseout(function () {
-    $(titulo).css("background", "none")
-    $(titulo).css("color","white")
-});
+     {dato1:'Teléfonos:',
+     dato2:' 011-34411916 / 02320-659884.'},
 
+     {dato1:'Movilidad Propia -',
+     dato2:' Licencia de conducir - B2'}
 
-var pablito = $("#pablito");
-
-$("#pablito").append("eeeeeeeeeee");
-
-var card = $("#card")
-var trabajos;
-
-var tarjeta = '<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">';
-tarjeta += '<div class="card-header">Burger King Torres del Sol</div>';
-tarjeta += '<div class="card-body">'
-tarjeta += '<h5 class="card-title">Pilar (2014)</h5>'
-tarjeta += '<p class="card-text">limpieza, bachero, preparación de alimentos repositor</p>';
-tarjeta += '</div>'
-
-
-
-/*
-
-let array = [1, 23, 34, "sds"];
-let objeto = { elemento: 'mielemento', 1: 'palabra', valor: 10 };
-
-let puto = 'so vo';
-var miObjeto = [
-    {
-        clase: "btn btn-primary",
-        nombre: "Primero",
-        deshabilitado: true,
-        tamanio: 'btn-lg'
-
-    },
-    {
-        clase: "btn btn-secondary",
-        nombre: "Segundo",
-        deshabilitado: false,
-        tamanio: ''
-
-    },
-    {
-        clase: "btn btn-danger",
-        nombre: "Tercero",
-        deshabilitado: false,
-        tamanio: 'btn-sm'
-
-    },
-    {
-        clase: "btn btn-info",
-        nombre: puto,
-        deshabilitado: true,
-        tamanio: ''
-
-    },
 ];
-let btn = '<button type="button" class="btn btn-dark">Dark</button>';
 
-for (let index = 0; index < miObjeto.length; index++) {
-    const nombre = miObjeto[index]['nombre'];
-    const tamanio = miObjeto[index]['tamanio'];
-    let deshabilitado = miObjeto[index]['deshabilitado'];
-    const clase = miObjeto[index]['clase'];
 
-    if (deshabilitado) {
-        deshabilitado = 'disabled';
-    } else {
-        deshabilitado = '';
-    }
+for (let index = 0; index < listaDatos.length; index++) {
+    const dato1= listaDatos[index]['dato1'];
+    const dato2= listaDatos[index]['dato2'];
 
-    //card.append('<button type="button" class="' + clase + ' ' + tamanio + '" ' + deshabilitado + '>' + nombre + '</button>')
+    datos.append('<a href="#" class="list-group-item list-group-item-action list-group-item-primary">'+ dato1 + dato2 +'</a>');
 
-}
-*/
+
+    
+};
+
+
+// experienciaLaboral //
+
 var cuadros = $("#trabajosAnteriores");
 
 var tarjetas = [
@@ -150,12 +95,29 @@ for (let index = 0; index < tarjetas.length; index++) {
     cuadros.append('<div class="col-sm"><div class="card text-white bg-primary mb-3" style="max-width: 18rem;">'+'<div class="card-header"><strong>' + empresa +'</strong></div>'+ '<div class="card-body">' + '<p class="card-text">' + lugar_anio + '</h5>' + '<p class="card-text">' + tareas + '</p>'+'</div></div>' )
 }; 
 
-//Index
-/*
-var texto1 =  $("#textoIndex");
-texto1.append("Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut tempora voluptatum cumque iusto unde fugit tempore atque distinctio non porro aliquam enim, voluptatem consequatur. Delectus optio obcaecati accusamus pariatur quia.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta facere doloremque voluptas voluptate optio, iste nihil sint debitis fugit commodi laudantium dolorem et sit, eaque, eius harum vero voluptatibus fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sequi iusto facere aliquam itaque corporis, quod eveniet, animi ratione eaque suscipit beatae, temporibus officiis quas? Nisi dolorem natus distinctio dignissimos" +"Facere nihil quam assumenda enim qui aspernatur magni deleniti, voluptas minus eum, dolores laborum voluptate quo! Necessitatibus architecto incidunt quo deserunt aliquam sit perferendis veniam, molestiae sed officiis voluptate ad Voluptatum corporis error molestiae, tempore suscipit doloribus. Quaerat, magni, dolorum suscipit cum amet, praesentium perferendis provident officiis debitis maiores rerum error consectetur. Repellendus, accusamus cum aut assumenda quaerat veniam illo.Dolor, eius sunt vel quae sequi ratione modi id nobis harum totam rerum eaque fugit recusandae excepturi voluptas, aut itaque quas laudantium voluptatum nulla ad, commodi distinctio amet aspernatur! Quae.Sit possimus delectus maiores totam sapiente, commodi fugiat, at reprehenderit labore minima aut perspiciatis doloribus? Aliquid voluptatibus facilis blanditiis! Provident ea doloremque tempora dolores distinctio voluptas hic alias veritatis labore! Velit, qui iure, fugit delectus soluta, odit illo quo vitae accusamus rerum quidem eaque reiciendis hic cumque et consequuntur ullam repellendus aperiam optio totam! Sequi iste sed accusantium ipsa eum."); 
 
-var redes = $("#redesSociales");
-redes.append("Redes Sociales");
+// formacionAcademica //
 
-*/
+var fAcademica = $("#fAcademica");
+
+listaFAcademica = [ 
+
+    { dato1: 'Secundaria Completa. Plan FinEs, sede "PAC", Del Viso.'},
+
+    {dato1:'Curso auxiliar de administración. Escuela municipal anexo Del Viso.'},
+
+     {dato1:'Curso de introducción a la programación web (Html, Css, Javascript). Educarte, sede Villa Crespo.'},
+
+     {dato1:'Curso inicial universitario (Universidad General Sarmiento) en Técnico en informática (en curso).'},
+
+    
+
+];
+
+
+for (let index = 0; index < listaFAcademica.length; index++) {
+    const dato1= listaFAcademica[index]['dato1'];
+
+    fAcademica.append(' <a href="#" class="list-group-item list-group-item-action list-group-item-info">' + dato1 +'</a>');
+};
+
