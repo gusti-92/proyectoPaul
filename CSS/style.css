@@ -1,8 +1,8 @@
 h1{
-    font-size: medium;
-    color: rgb(10, 2, 2);
+    color: white;
     text-align: center;
-
+    font-family: 'Londrina Solid', cursive;
+    
 }
 
 
@@ -14,19 +14,47 @@ body{
     background-size: cover;
 }
 
-.fondoTexto{ background-color:rgba(225, 255, 255, .8)
+.fondoTexto{ background-color:rgb(254, 255, 255, .8)
              } 
 
     
 img{
     display:block;
-    margin:auto;
-    width: 400px; height: 500px;
-
-
+    width: 350px; height: 370px;
+    border-radius: 100%;
+    margin: auto;
 }
 
 .subtitulo{
     text-align: center;
 };
 
+h3{
+    background: white;
+}
+
+.navbar-nav {
+    
+    float: left;
+    margin: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    position: relative;}
+
+
+    #imagenTarjeta{
+            margin: 0 auto; /* Added */
+            float: none; /* Added */
+            margin-bottom: 10px; /* Added */
+    }
+
+
+
+footer{
+    background-color: white;
+}
+
+#experiencia{
+    font-size: 40px;
+    text-decoration-line: underline;
+}
