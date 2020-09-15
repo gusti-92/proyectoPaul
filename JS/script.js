@@ -1,3 +1,24 @@
+//index//
+
+var titleIndex = $("#titleIndex");
+
+titleIndex.append('Gustavo Ariel Paez');
+
+var textIndex = $("#textIndex");
+
+textIndex.append('Mi nombre es Gustavo, me encuentro en una búsqueda laboral presentando mi web diseñada a base de las habilidades y conocimientos que he adquirido en un curso de Introducción a la Programación Web y al deseo de instruirme por completo en la materia. Ya que en el presente me encuentro desempleado estaría a interesado en comenzar una nueva experiencia laboral no sólo por la necesidad económica, sino también por el deseo de seguir progresando en el campo de la programación, puesto que al no poder contar con una entrada de capital se me dificulta poder abonar cursos en los que poría generar más conocimientos.');
+
+var footingText = $("#footingText");
+
+footingText.append('Actualizado el 15 de septiembre 2020');
+
+
+var footer1 = $("#footer1");
+var footer2 = $("#footer2");
+
+footer1.append(' - Gustavo Ariel Paez') + footer2.append('Año 2020');
+
+
 // datosPersonales //
 
 var datos = $("#datosPersonales");
@@ -60,20 +81,20 @@ var tarjetas = [
     {
         empresa:'Kiosco Drugstore "50+".',
         lugar_anio:'Del Viso, (2015,2017).',
-        tareas: 'Cajero, atención al cliente, limpieza, repositor, cadete, encargado de realizar pedidos, control de mercadería.',
+        tareas: 'Cajero, atención al cliente, limpieza, repositor, encargado de realizar pedidos.',
     },
 
     {
         empresa: 'Lavadero “Don Lavadero”.',
         lugar_anio: 'Maquinista Savio, (2018).',
-        tareas: 'Atención al cliente, limpieza de autos interna y externa, cajero, encargado.'
+        tareas: 'Atención al cliente, cajero, encargado.'
     },
 
     {
         
         empresa: 'Kiosco "El Urbano".',
         lugar_anio: 'Del Viso, (2018-2019).',
-        tareas: 'Cajero, atención al cliente, limpieza, repositor, cadete, encargado en realizar pedidos, control de mercadería.',
+        tareas: 'Cajero, atención al cliente, limpieza, repositor, cadete, encargado en realizar pedidos.',
     },
 
     {
@@ -120,4 +141,46 @@ for (let index = 0; index < listaFAcademica.length; index++) {
 
     fAcademica.append(' <a href="#" class="list-group-item list-group-item-action list-group-item-info">' + dato1 +'</a>');
 };
+
+//proyectos//
+
+var tarjetasProyectos = $('#proyectos');
+
+listaProyectos =[
+    {titulo: 'Color Game',
+     imagen: '../images/image_colorGame.jpg',
+     descripcion: 'Juego de colores',
+     link: 'https://google.com',
+    },
+
+    {titulo: 'Proyecto del Clima',
+     imagen: '../images/image_proyectoClima.jpg',
+     descripcion: 'Mediante una api podremos saber el clima de la ciudad que elijas!',
+     link: '',
+    },
+    
+    {titulo: 'Proyecto Hackaton',
+     imagen: '../images/image_proyectoHackaton.jpg',
+     descripcion: 'Se simula una página de compra y ventas de videojuegos en la cuál podrás elegir tu videojuego favorito o vender uno que ya no uses.',
+     link: ''
+    },
+
+    {titulo: 'Proyecto Lista',
+     imagen: '../images/image_proyectoLista.jpg',
+     descripcion: 'Un anotador recordatorio de tareas en las que podes agregar algunas para hacer y eliminar otras ya realizadas',
+     link: ''
+    },
+    
+
+];
+
+
+for ( index = 0; index < listaProyectos.length; index++) {
+    const imagen = listaProyectos[index] ['imagen'];
+    const descripcion = listaProyectos[index] ['descripcion'];
+    const link = listaProyectos[index] ['link'];
+    const titulo = listaProyectos[index] ['titulo'];    
+
+tarjetasProyectos.append('<div class="col-sm-6"><div class="card" id="proyectCard"><img src=' + imagen + ' class="card-img-top" alt="..." id="imagenProyecto"><div class="card-body"><h5 class="card-title">' + titulo + '</h5><p class="card-text">' + descripcion + '</p><a href=' + link + ' target="_blank" class="btn btn-primary">Descargar Proyecto</a></div></div></div>')};
+
 
