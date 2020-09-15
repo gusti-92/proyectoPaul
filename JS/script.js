@@ -150,25 +150,25 @@ listaProyectos =[
     {titulo: 'Color Game',
      imagen: '../images/image_colorGame.jpg',
      descripcion: 'Juego de colores',
-     link: 'https://google.com',
+     link: 'https://github.com/gusti-92/ColorGame',
     },
 
     {titulo: 'Proyecto del Clima',
      imagen: '../images/image_proyectoClima.jpg',
      descripcion: 'Mediante una api podremos saber el clima de la ciudad que elijas!',
-     link: '',
+     link: 'https://github.com/gusti-92/proyectoClima',
     },
     
     {titulo: 'Proyecto Hackaton',
      imagen: '../images/image_proyectoHackaton.jpg',
      descripcion: 'Se simula una página de compra y ventas de videojuegos en la cuál podrás elegir tu videojuego favorito o vender uno que ya no uses.',
-     link: ''
+     link: 'https://github.com/gusti-92/proyectoHackaton'
     },
 
     {titulo: 'Proyecto Lista',
      imagen: '../images/image_proyectoLista.jpg',
      descripcion: 'Un anotador recordatorio de tareas en las que podes agregar algunas para hacer y eliminar otras ya realizadas',
-     link: ''
+     link: 'https://github.com/gusti-92/proyectoLista'
     },
     
 
@@ -181,6 +181,9 @@ for ( index = 0; index < listaProyectos.length; index++) {
     const link = listaProyectos[index] ['link'];
     const titulo = listaProyectos[index] ['titulo'];    
 
-tarjetasProyectos.append('<div class="col-sm-6"><div class="card" id="proyectCard"><img src=' + imagen + ' class="card-img-top" alt="..." id="imagenProyecto"><div class="card-body"><h5 class="card-title">' + titulo + '</h5><p class="card-text">' + descripcion + '</p><a href=' + link + ' target="_blank" class="btn btn-primary">Descargar Proyecto</a></div></div></div>')};
+tarjetasProyectos.append('<div class="col-sm-6"><div class="card" id="proyectCard"><img src=' + imagen + ' class="card-img-top" alt="..." id="imagenProyecto"><div class="card-body"><h5 class="card-title">' + titulo + '</h5><p class="card-text">' + descripcion + '</p><a href=' + link + ' target="_blank" class="btn btn-primary">Ver Proyecto en GitHub</a></div></div></div>')};
+
+
+
 
 
