@@ -184,38 +184,64 @@ for ( index = 0; index < listaProyectos.length; index++) {
 tarjetasProyectos.append('<div class="col-sm-6"><div class="card" id="proyectCard"><img src=' + imagen + ' class="card-img-top" alt="..." id="imagenProyecto"><div class="card-body"><h5 class="card-title">' + titulo + '</h5><p class="card-text">' + descripcion + '</p><a href=' + link + ' target="_blank" class="btn btn-primary">Ver Proyecto en GitHub</a></div></div></div>')};
 
 
+
+
 //conocimientoWeb//
+
 
 var conocimientos = $('#conocimientoWeb');
 
 listaConocimientos = [
-    {titulo: 'javascript',
-     color: 'progress-bar bg-success'},
+    {titulo: 'Html',
+     color: 'progress-bar bg-success',
+     porcentaje: '75',
+    },
 
-     {titulo: 'jquery',
-     color: 'progress-bar bg-info'},
+    
+    {titulo: 'Css',
+     color: 'progress-bar bg-warning',
+     porcentaje: '70',
+    },
+    
+    {titulo: 'Jquery',
+     color: 'progress-bar bg-info',
+     porcentaje: '65',
+    },
      
-     {titulo: '',
-     color: ''},
+    {titulo: 'Javascript',
+     color: 'progress-bar bg-danger',
+     porcentaje: '63',
+    },
 
-     {titulo: '',
-     color: ''},
-     
-     {titulo: '',
-     color: ''},
+    {titulo: 'GitHub/GitKraken',
+     color: 'progress-bar bg-success',
+     porcentaje: '61',
+    },
 
-     {titulo: '',
-     color: ''},
-     
+    {titulo: 'Bootstrap',
+     color: 'progress-bar bg-info',
+     porcentaje: '78',
+    },
+
+    {titulo: 'Inglés',
+     color: 'progress-bar bg-danger',
+     porcentaje: '60',
+    },
+
+    {titulo: 'Inglés',
+     color: 'progress-bar bg-danger',
+     porcentaje: '60',
+    },
 ]
 
 for (let index = 0; index < listaConocimientos.length; index++) {
     const titulo = listaConocimientos[index] ['titulo'];
     const color = listaConocimientos[index] ['color'];
-    
+    const porcentaje = listaConocimientos[index] ['porcentaje'];
 
 
-    conocimientos.append('<div class="col-sm-4"></div><div class="col-sm-4"><h3>' +titulo + '<h3><div class="progress"><div class="' + color + '" role="progressbar"style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div></div></div><div class="col-sm-4"></div>')
+
+    conocimientos.append('<div class="col-sm-4"></div><div class="col-sm-4"><h5 id= "tituloConocimiento">' + titulo + '<h5><div class="progress"><div class="' + color + '" role="progressbar" style="width:' + porcentaje + '%" aria-valuenow="' + porcentaje + '" aria-valuemin="0" aria-valuemax="100">' + porcentaje + '%</div></div></div><div class="col-sm-4"></div>')
 }
 
 
