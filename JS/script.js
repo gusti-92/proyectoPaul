@@ -6,7 +6,7 @@ titleIndex.append('Gustavo Ariel Paez');
 
 var textIndex = $("#textIndex");
 
-textIndex.append('Mi nombre es Gustavo, me encuentro en una búsqueda laboral presentando mi web diseñada a base de las habilidades y conocimientos que he adquirido en un curso de Introducción a la Programación Web y al deseo de instruirme por completo en la materia. Ya que en el presente me encuentro desempleado estaría a interesado en comenzar una nueva experiencia laboral no sólo por la necesidad económica, sino también por el deseo de seguir progresando en el campo de la programación, puesto que al no poder contar con una entrada de capital se me dificulta poder abonar cursos en los que poría generar más conocimientos.');
+textIndex.append('Mi nombre es Gustavo, me encuentro en una búsqueda laboral presentando mi web diseñada a base de las habilidades y conocimientos que he adquirido en un curso de Introducción a la Programación Web y al deseo de instruirme por completo en la materia. Ya que en el presente me encuentro desempleado estaría a interesado en comenzar una nueva experiencia laboral no sólo por la necesidad económica, sino también por el deseo de seguir progresando en el campo de la programación, puesto que al no poder contar con una entrada de capital se me dificulta poder abonar cursos en los que podría alcanzar nuevos conocimientos.');
 
 var footingText = $("#footingText");
 
@@ -184,6 +184,39 @@ for ( index = 0; index < listaProyectos.length; index++) {
 tarjetasProyectos.append('<div class="col-sm-6"><div class="card" id="proyectCard"><img src=' + imagen + ' class="card-img-top" alt="..." id="imagenProyecto"><div class="card-body"><h5 class="card-title">' + titulo + '</h5><p class="card-text">' + descripcion + '</p><a href=' + link + ' target="_blank" class="btn btn-primary">Ver Proyecto en GitHub</a></div></div></div>')};
 
 
+//conocimientoWeb//
+
+var conocimientos = $('#conocimientoWeb');
+
+listaConocimientos = [
+    {titulo: 'javascript',
+     color: 'progress-bar bg-success'},
+
+     {titulo: 'jquery',
+     color: 'progress-bar bg-info'},
+     
+     {titulo: '',
+     color: ''},
+
+     {titulo: '',
+     color: ''},
+     
+     {titulo: '',
+     color: ''},
+
+     {titulo: '',
+     color: ''},
+     
+]
+
+for (let index = 0; index < listaConocimientos.length; index++) {
+    const titulo = listaConocimientos[index] ['titulo'];
+    const color = listaConocimientos[index] ['color'];
+    
+
+
+    conocimientos.append('<div class="col-sm-4></div><div class="col-sm-4><h3>' +titulo + '<h3><div class="progress"><div class="' + color + '" role="progressbar"style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div></div></div><div class="col-sm-4></div>')
+}
 
 
 
