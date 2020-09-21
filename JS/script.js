@@ -215,7 +215,7 @@ for (let index = 0; index < listaConocimientos.length; index++) {
     
 
 
-    conocimientos.append('<div class="col-sm-12"><div class="col-sm-4"></div><div class="col-sm-4"><h3>' +titulo + '<h3><div class="progress"><div class="' + color + '" role="progressbar"style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div></div></div><div class="col-sm-4"></div></div>')
+    conocimientos.append('<div class="col-sm-4"></div><div class="col-sm-4"><h3>' +titulo + '<h3><div class="progress"><div class="' + color + '" role="progressbar"style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div></div></div><div class="col-sm-4"></div>')
 }
 
 
